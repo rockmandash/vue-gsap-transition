@@ -74,4 +74,4 @@ var makeTransition = function (_enter, _leave) {
   });
 };
 
-exports.default = makeTransition;
+module.exports = makeTransition;
