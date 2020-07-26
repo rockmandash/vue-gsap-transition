@@ -4,7 +4,8 @@
   "license": "MIT",
   "author": "Joseph Wang",
   "scripts": {
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js",
+    "release": "standard-version"
   },
   "prettier": "great-prettier-config",
   "dependencies": {
@@ -12,7 +13,8 @@
   },
   "devDependencies": {
     "fs-extra": "^9.0.1",
-    "great-prettier-config": "^2.0.0"
+    "great-prettier-config": "^2.0.0",
+    "standard-version": "^8.0.2"
   },
   "peerDependencies": {
     "vue": "^2.6.11"
