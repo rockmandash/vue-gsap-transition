@@ -1,16 +1,6 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-fs.copy(
-  path.resolve(__dirname, './makeTransition.js'),
-  path.resolve(process.cwd(), './makeTransition/index.js')
-);
-
-fs.copy(
-  path.resolve(__dirname, './makeTransition.js'),
-  path.resolve(process.cwd(), './makeTransition/index.js')
-);
-
 const allTransitions = [
   { name: 'Fade', enter: { opacity: 1 }, leave: { opacity: 0 } }
 ];
