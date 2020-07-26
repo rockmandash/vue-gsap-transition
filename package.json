@@ -4,12 +4,12 @@
   "license": "MIT",
   "author": "Joseph Wang",
   "scripts": {
-    "build": "./script/build.js"
+    "test2": "./scripts/test2.js"
   },
+  "prettier": "great-prettier-config",
   "dependencies": {
     "gsap": "^3.4.2"
   },
-  "prettier": "great-prettier-config",
   "devDependencies": {
     "fs-extra": "^9.0.1",
     "great-prettier-config": "^2.0.0"
