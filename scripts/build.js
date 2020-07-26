@@ -6,6 +6,8 @@ const allTransitions = [
 ];
 
 allTransitions.forEach(({ name, enter, leave }) => {
+  fs.ensureDir(path.resolve(process.cwd(), `./${name}`));
+
   const [indexJSPath, typingPath] = ['index.js', 'index.d.ts'].map(fileName =>
     path.resolve(process.cwd(), `./${name}/${fileName}`)
   );
