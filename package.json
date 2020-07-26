@@ -1,0 +1,31 @@
+{
+  "name": "vue-gsap-transition",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Joseph Wang",
+  "main": "dist/index.js",
+  "module": "dist/vue-gsap-transition.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsdx build",
+    "start": "tsdx watch"
+  },
+  "dependencies": {
+    "gsap": "^3.4.2"
+  },
+  "prettier": "great-prettier-config",
+  "devDependencies": {
+    "great-prettier-config": "^2.0.0",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7",
+    "vue": "^2.6.11"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
+  }
+}
