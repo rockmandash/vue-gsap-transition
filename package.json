@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "Joseph Wang",
   "scripts": {
-    "test2": "./scripts/test2.js"
+    "build": "./scripts/build.js"
   },
   "prettier": "great-prettier-config",
   "dependencies": {
