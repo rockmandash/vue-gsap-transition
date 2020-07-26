@@ -5,7 +5,7 @@
   "author": "Joseph Wang",
   "scripts": {
     "build": "node ./scripts/build.js",
-    "release": "standard-version"
+    "release": "standard-version && npm run build && npm publish"
   },
   "prettier": "great-prettier-config",
   "dependencies": {
