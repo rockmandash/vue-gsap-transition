@@ -3,9 +3,17 @@
   "version": "0.1.6",
   "license": "MIT",
   "author": "Joseph Wang",
+  "main": "dist/index.js",
+  "module": "dist/tsdx-test.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
-    "build": "node ./scripts/build.js",
-    "release": "standard-version && npm run build && npm publish && git clean -fd"
+    "build": "tsdx build",
+    "release": "standard-version && npm run build && npm publish",
+    "start": "tsdx watch"
   },
   "prettier": "great-prettier-config",
   "dependencies": {
@@ -14,7 +22,11 @@
   "devDependencies": {
     "fs-extra": "^9.0.1",
     "great-prettier-config": "^2.0.0",
-    "standard-version": "^8.0.2"
+    "standard-version": "^8.0.2",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7",
+    "vue": "^2.6.11"
   },
   "peerDependencies": {
     "vue": "^2.6.11"
