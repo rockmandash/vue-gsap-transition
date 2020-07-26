@@ -5,7 +5,7 @@ const allTransitions = [
   { name: 'Fade', enter: { opacity: 1 }, leave: { opacity: 0 } }
 ];
 
-allTransitions.forEach(async ({ name, enter, leave }) => {
+allTransitions.forEach(({ name, enter, leave }) => {
   const [indexJSPath, typingPath] = ['index.js', 'index.d.ts'].map(fileName =>
     path.resolve(process.cwd(), `./${name}/${fileName}`)
   );
