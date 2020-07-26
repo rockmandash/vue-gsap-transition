@@ -44,17 +44,27 @@ var makeTransition = function (_enter, _leave) {
       enter: function enter(el, done) {
         gsap.to(
           el,
-          _extends({}, this.$props, _enter, {
-            onComplete: done
-          })
+          _extends(
+            {},
+            { duration: this.duration, delay: this.delay, ease: this.ease },
+            _enter,
+            {
+              onComplete: done
+            }
+          )
         );
       },
       leave: function leave(el, done) {
         gsap.to(
           el,
-          _extends({}, this.$props, _leave, {
-            onComplete: done
-          })
+          _extends(
+            {},
+            { duration: this.duration, delay: this.delay, ease: this.ease },
+            _leave,
+            {
+              onComplete: done
+            }
+          )
         );
       }
     },
