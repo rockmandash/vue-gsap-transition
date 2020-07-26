@@ -1,5 +1,5 @@
-var Vue = require('vue');
-var gsap = require('gsap');
+var Vue = require('vue').default;
+var gsap = require('gsap').default;
 
 function _extends() {
   _extends =
