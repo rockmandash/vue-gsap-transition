@@ -62,6 +62,9 @@ var makeTransition = function (_enter, _leave) {
       return h(
         'transition',
         {
+          props: {
+            css: false
+          },
           on: {
             beforeEnter: this.beforeEnter,
             enter: this.enter,
